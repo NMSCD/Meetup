@@ -1,0 +1,13 @@
+RewriteEngine On
+
+Redirect 301 "/Robots.txt" "/robots.txt"
+Redirect 301 "/Sitemap.xml" "/sitemap.xml"
+
+{{#each headers}}
+Header add {{name}}: "{{{value}}}"
+{{/each}}
+
+
+{{#each redirects}}
+RewriteRule ^{{pattern}}/(.*)$ {{{urlref url}}} [R=301,NC,L]
+{{/each}}

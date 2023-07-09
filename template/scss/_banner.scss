@@ -1,0 +1,50 @@
+section.banner {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    #banner-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("/assets/img/banner-frame1.png");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.25;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0.25em;
+    }
+
+    h1 + i {
+        font-size: 1.5em;
+        color: rgb(185, 185, 185);
+    }
+}
+
+section.banner,
+section.banner #banner-bg {
+    width: 100vw;
+    height: calc(100vw / 1.77);
+    min-height: 650px;
+}
+
+section.banner #banner-bg video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: auto;
+    height: calc(100vw / 1.6);
+    min-height: 650px;
+
+    transform: translateX(-50%);
+}

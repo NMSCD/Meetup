@@ -1,0 +1,39 @@
+<footer class="footer mt-2 {{additionalClass}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="heading">
+                    <h2>Getting in touch</h2>
+                </div>
+                <p>
+                    <span>
+                        <strong>{{organisers.captSteve.name}}: </strong>
+                        <a href="{{organisers.captSteve.contactMethod}}" target="_blank" rel="noopener noreferrer"
+                            title="{{organisers.captSteve.name}}">{{organisers.captSteve.contactName}}</a>
+                    </span>
+                    <span>,&nbsp;</span>
+                    <span>
+                        <strong>{{organisers.AssistantNMS.name}}: </strong>
+                        <a href="{{organisers.AssistantNMS.contactMethod}}" target="_blank" rel="noopener noreferrer"
+                            title="{{organisers.AssistantNMS.name}}">{{organisers.AssistantNMS.contactName}}</a>
+                    </span>
+                </p>
+                <p>If you would like to report bugs, please open an issue or pull request on the
+                    specific repository. If you are not sure which repository is affected, feel free to create a post on
+                    the <a href="{{link.nmscdGithubDiscussions}}" target="_blank" rel="noopener noreferrer"
+                        title="Github discussions forum">Discussions forum</a>.
+                </p>
+                <div class="copyright">
+                    <span><a href="{{link.nmscd}}" title="NMSCD" target="_blank" rel="noopener noreferrer">©NMSCD</a> -
+                        website built by</span>&nbsp;
+                    <a href="{{assistantNms.web}}" target="_blank" rel="noopener noreferrer"
+                        title="AssistantNMS">AssistantNMS</a>
+                    <span> - {{version}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+</footer>

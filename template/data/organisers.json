@@ -1,0 +1,39 @@
+{
+    "captSteve": {
+        "name": "Captain Steve",
+        "img": "/assets/img/org/captSteve.jpg",
+        "role": "Event Coordinator",
+        "link": "https://www.youtube.com/c/CaptainSteveNMSA",
+        "contactName": "Twitter",
+        "contactMethod": "https://twitter.com/NCaptainsteve"
+    },
+    "AssistantNMS": {
+        "name": "AssistantNMS",
+        "img": "/assets/img/org/captSteve.jpg",
+        "role": "Raffle & Quiz questions",
+        "link": "https://nmsassistant.com",
+        "contactName": "Twitter",
+        "contactMethod": "https://twitter.com/AssistantNMS"
+    },
+    "nella": {
+        "name": "Nella Doodle",
+        "img": "/assets/img/org/captSteve.jpg",
+        "role": "Quiz organiser",
+        "link": "https://www.youtube.com/channel/UCOyj7ZaUhmDXzt5SMVj3BZQ",
+        "contactMethod": "https://twitter.com/Ynys"
+    },
+    "meogi": {
+        "name": "Meogi",
+        "img": "/assets/img/org/captSteve.jpg",
+        "role": "Virtual Meetup",
+        "link": "https://twitter.com/MEOGIone",
+        "contactMethod": "https://twitter.com/MEOGIone"
+    },
+    "scottishRod": {
+        "name": "Scottish Rod",
+        "img": "/assets/img/org/captSteve.jpg",
+        "role": "Organiser",
+        "link": "https://www.youtube.com/scottishrod",
+        "contactMethod": "https://twitter.com/scottishrod"
+    }
+}

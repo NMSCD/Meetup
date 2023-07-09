@@ -1,0 +1,175 @@
+{
+    "rootUrl": "https://meetup.nmscd.com/",
+    "theme": {
+        "colour": "#7986cb",
+        "maskColour": "#7986cb",
+        "appleStatusBar": "#7986cb"
+    },
+    "meta": {
+        "title": "NMS Meetup - Guildford meetup details & memories",
+        "appName": "No Man's Sky Guildford Meetup",
+        "description": "A website to provide details on the yearly Guildford meetup and a place to showcase the memories that we have had with all those that joined us to celebrate No Man's Sky",
+        "mailto": "mailto:support@nmsassistant.com",
+        "privacyPolicy": "/privacy_policy.html",
+        "termsAndConditions": "/terms_and_conditions.html"
+    },
+    "link": {
+        "nmscd": "https://nmscd.com",
+        "nmscdGithubOrg": "https://github.com/NMSCD",
+        "nmscdGithubDiscussions": "https://github.com/orgs/NMSCD/discussions",
+        "virtualMeetupDiscord": "https://discord.gg/wGNjTjxacX"
+    },
+    "event": {
+        "current": {
+            "date": "27 Aug 2023 18:00:00 GMT",
+            "shortDate": "27th August",
+            "year": "2023",
+            "time": "6PM (GMT)",
+            "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
+            "locationAddress": [
+                "Three Pigeons pub (Up Stairs)",
+                "169 High St",
+                "Guildford",
+                "GU1 3AJ"
+            ],
+            "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
+            "youtubeEmbed": "https://www.youtube.com/embed/wLcejNyW5_U",
+            "youtubeCaption": "Video by Captain Steve about the event"
+        },
+        "notConfirmed": {
+            "date": "25 Aug 2024 18:00:00 GMT",
+            "shortDate": "25th August",
+            "year": "2024",
+            "time": "6PM (GMT)",
+            "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
+            "locationAddress": [
+                "Three Pigeons pub (Up Stairs)",
+                "169 High St",
+                "Guildford",
+                "GU1 3AJ"
+            ],
+            "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
+            "youtubeEmbed": "https://www.youtube.com/embed/wLcejNyW5_U",
+            "youtubeCaption": "Video by Captain Steve about the event"
+        },
+        "previous": [
+            {
+                "date": "28 Aug 2022 18:00:00 GMT",
+                "shortDate": "28th August",
+                "year": "2022",
+                "time": "6PM (GMT)",
+                "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
+                "locationAddress": [
+                    "Three Pigeons pub (Up Stairs)",
+                    "169 High St",
+                    "Guildford",
+                    "GU1 3AJ"
+                ],
+                "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
+                "youtubeEmbed": "https://www.youtube.com/embed/93EKQ-l9FlU",
+                "youtubeCaption": "Video by Captain Steve about the event"
+            },
+            {
+                "date": "25 Aug 2019 18:00:00 GMT",
+                "shortDate": "25th August",
+                "year": "2019",
+                "time": "6PM (GMT)",
+                "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
+                "locationAddress": [
+                    "Three Pigeons pub (Up Stairs)",
+                    "169 High St",
+                    "Guildford",
+                    "GU1 3AJ"
+                ],
+                "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
+                "youtubeEmbed": "https://www.youtube.com/watch?v=NWTDOVMrbHY",
+                "youtubeCaption": "Video by Captain Steve about the event"
+            }
+        ]
+    },
+    "preconnectLinks": [
+        "https://fonts.nmscd.com"
+    ],
+    "twitter": {
+        "handle": "@AssistantNMS",
+        "imageAlt": "Twitter card image",
+        "metaImageSize": "summary_large_image"
+    },
+    "assistantNms": {
+        "web": "https://nmsassistant.com",
+        "webApp": "https://app.nmsassistant.com",
+        "webApi": "https://api.nmsassistant.com",
+        "githubOrg": "https://github.com/AssistantNMS",
+        "githubApp": "https://github.com/AssistantNMS/App",
+        "githubAppReleases": "https://github.com/AssistantNMS/App/releases",
+        "githubVersions": "https://github.com/AssistantNMS/Versions"
+    },
+    "humans": {
+        "kurt": {
+            "name": "Kurt Lourens",
+            "email": "mailto:hi@kurtlourens.com",
+            "website": "https://kurtlourens.com",
+            "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
+            "contact": "hi [at] kurtlourens.com",
+            "jobTitle": "Senior Software Engineer",
+            "additionalName": "KhaozTopsy",
+            "location": "the Netherlands",
+            "twitter": "@KhaozTopsy",
+            "discord": "@KhaozTopsy"
+        },
+        "lenni": {
+            "name": "Lenni",
+            "website": "https://lenni009.github.io",
+            "image": "https://lenni009.github.io/HubWikiPageCreator/assets/images/jpg/misc/lenni.jpg",
+            "additionalName": "Lenni009",
+            "location": "Germany",
+            "discord": "@lenni009"
+        }
+    },
+    "navigation": {
+        "privacyPolicy": "/privacy_policy.html",
+        "termsAndConditions": "/terms_and_conditions.html"
+    },
+    "images": {
+        "maskIcon": "/safari-pinned-tab.svg",
+        "favicon": {
+            "ico": "assets/favicon/favicon.ico",
+            "x16": "assets/favicon/favicon-16x16.png",
+            "x32": "assets/favicon/favicon-32x32.png",
+            "x96": "assets/favicon/favicon-96x96.png",
+            "x196": "assets/favicon/favicon-196x196.png"
+        },
+        "apple": {
+            "x76": "assets/favicon/apple-icon-76x76.png",
+            "x114": "assets/favicon/apple-icon-114x114.png",
+            "x120": "assets/favicon/apple-icon-120x120.png",
+            "x144": "assets/favicon/apple-icon-144x144.png",
+            "x152": "assets/favicon/apple-icon-152x152.png"
+        },
+        "manifest": [
+            {
+                "size": "256x256",
+                "path": "assets/favicon/android-icon-256x256.png"
+            },
+            {
+                "size": "192x192",
+                "path": "assets/favicon/android-icon-192x192.png"
+            },
+            {
+                "size": "144x144",
+                "path": "assets/favicon/apple-icon-144x144.png"
+            },
+            {
+                "size": "96x96",
+                "path": "assets/favicon/favicon-96x96.png"
+            },
+            {
+                "size": "76x76",
+                "path": "assets/favicon/apple-icon-76x76.png"
+            }
+        ],
+        "twitter": "https://nmscd.com/assets/img/twitterCard.png",
+        "facebook": "https://nmscd.com/assets/img/twitterCard.png"
+    },
+    "redirects": []
+}

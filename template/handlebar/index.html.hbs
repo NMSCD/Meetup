@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{{> components/documentHead preloadMainImgs="true" schemaOrg="true"}}
+
+<body id="app-body" class="is-loading">
+
+    {{> components/header }}
+
+    <div class="page-wrapper">
+
+        <section class="banner">
+            <div id="banner-bg"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-shadow ta-center">
+                        <h1>No Man's Sky <span class="primary">{{year}}</span>&nbsp;meetup
+                            <small class="hidden for seo">Guildford meetup</small>
+                        </h1>
+                        <i>
+                            <a href="https://goo.gl/maps/VcDBMRhMVhJhucfB6" class="primary" target="_blank"
+                                rel="noopener noreferrer">
+                                Three Pigeons pub, Guildford
+                            </a>
+                        </i>
+                    </div>
+                    <div class="col-12 text-shadow ta-center">
+                        <h3 id="countdown" class="mt-2">Loading...</h3>
+                    </div>
+                </div>
+                <div class="scroll-down-arrows col-md-0"><span></span><span></span><span></span></div>
+            </div>
+        </section>
+
+        <section id="event-planned" class="alt">
+            {{> components/eventDetails event=event.current}}
+        </section>
+
+        {{!--
+        {{#each event.previous}}
+        {{> components/eventDetails event=this}}
+        {{/each}}
+        --}}
+
+        <section id="event-unplanned" class="alt hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="heading">
+                            <h2>Event details (Not confirmed)</h2>
+                        </div>
+                        <div id="location">
+                            <strong>Location:&nbsp;</strong>
+                            <div>
+                                <a href="{{event.notConfirmed.locationUrl}}" target="_blank" rel="noopener noreferrer">
+                                    {{#each event.notConfirmed.locationAddress}}
+                                    <span>{{this}}<br></span>
+                                    {{/each}}
+                                </a>
+                            </div>
+                        </div>
+                        <div><strong>Date:&nbsp;</strong>{{event.notConfirmed.shortDate}}</div>
+                        <div><strong>Time:&nbsp;</strong>{{event.notConfirmed.time}}</div>
+                    </div>
+                    <div class="col-6 ta-center noselect">
+                        <img src="/assets/img/unknown.svg" width="300" alt="unconfirmed meetup">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{> components/footer}}
+
+    </div>
+
+    {{> components/scripts }}
+
+</body>
+
+</html>

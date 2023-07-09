@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="heading">
+                <h2>Event details ({{event.year}})</h2>
+            </div>
+            <div id="location">
+                <strong>Location:&nbsp;</strong>
+                <div>
+                    <a href="{{event.locationUrl}}" target="_blank" rel="noopener noreferrer">
+                        {{#each event.locationAddress}}
+                        <span>{{this}}<br></span>
+                        {{/each}}
+                    </a>
+                </div>
+            </div>
+            <div><strong>Date:&nbsp;</strong>{{event.shortDate}}</div>
+            <div><strong>Time:&nbsp;</strong>{{event.time}}</div>
+            <br>
+            <div><strong>Food:&nbsp;</strong>{{event.foodNotice}}</div>
+        </div>
+        <div class="col-6 ta-center noselect">
+            <iframe width="520" height="290" src="{{event.youtubeEmbed}}" title="YouTube video player"
+                allow="autoplay; picture-in-picture"></iframe>
+            <i>{{event.youtubeCaption}}</i>
+        </div>
+    </div>
+</div>
