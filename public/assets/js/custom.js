@@ -112,13 +112,16 @@ const initVideo = () => {
     video.muted = true;
     video.autoplay = true;
     video.loop = true;
+    video.disablePictureInPicture = true;
+    video.controls = false;
+    video.draggable = false;
     video.oncanplay = function () {
         video.classList.remove('opacity-0');
     };
 
     bannerBgElem.appendChild(video);
 
-    setTimeout(() => video.play(), 1000);
+    // setTimeout(() => video.play(), 1000);
 }
 
 const updateCountdownText = (text) => {
