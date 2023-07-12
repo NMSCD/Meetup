@@ -6,3 +6,4 @@ node_modules
 /template/scss/third-party/_pico.scss
 /public/assets/img/members
 template/scss/third-party/_normalize.scss
+/public/CNAME

@@ -1,16 +1,16 @@
 {
   "name": "nmscd.meetup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "npm-run-all --sequential setup:* sass:* template:*",
     "setup": "npm i && npm-run-all --sequential setup:*",
     "setup:update-sass": "node template/node/updateScssFiles.js",
     "dev": "concurrently \"npm:dev:*\"",
     "dev:watch-template": "nodemon -e hbs -x \"npm-run-all template:*\"",
-    "dev:watch-sass": "nodemon -e scss -x \"npm-run-all sass:*\"",
+    "dev:watch-sass": "sass template/scss/main.scss ./public/assets/css/main.css --watch",
     "dev:server": "alive-server --mount=/:./public --watch=./public",
     "template:main": "node template/node/buildTemplate.js",
-    "sass:main": "sass template/scss/main.scss ./public/assets/css/main.css"
+    "sass:main": "sass template/scss/main.scss ./public/assets/css/main.css --no-source-map"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "author": "Kurt Lourens",
   "license": "ISC",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "alive-server": "^1.3.0",
     "canvas": "^2.11.2",
     "concurrently": "^8.2.0",
