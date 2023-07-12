@@ -137,9 +137,9 @@ const pageSetup = () => {
     const startDateStr = window.siteData.nextEventDate;
     const startDate = new Date(startDateStr);
 
-    initVideo();
     registerServiceWorker();
     calculateCountdown(startDate);
     // calculateCountdown(new Date('1 July 2023 12:01:00 GMT+0200'));
+    setTimeout(() => initVideo(), 250);
 }
 pageSetup();
