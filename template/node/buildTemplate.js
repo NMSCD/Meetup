@@ -62,6 +62,7 @@ async function buildTemplates() {
         { src: 'privacy_policy.html.hbs', dest: 'privacy_policy.html' },
         { src: '404.html.hbs', dest: '404.html' },
 
+        { src: 'CNAME.hbs', dest: 'CNAME' },
         { src: 'htaccess.hbs', dest: '.htaccess' },
         { src: 'humans.txt.hbs', dest: 'humans.txt' },
         { src: 'robots.txt.hbs', dest: 'robots.txt' },

@@ -1,5 +1,6 @@
 {
     "rootUrl": "https://meetup.nmscd.com/",
+    "cname": "meetup.nmscd.com",
     "theme": {
         "colour": "#7986cb",
         "maskColour": "#7986cb",
