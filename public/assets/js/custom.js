@@ -112,13 +112,16 @@ const initVideo = () => {
     video.muted = true;
     video.autoplay = true;
     video.loop = true;
+    video.disablePictureInPicture = true;
+    video.controls = false;
+    video.draggable = false;
     video.oncanplay = function () {
         video.classList.remove('opacity-0');
     };
 
     bannerBgElem.appendChild(video);
 
-    setTimeout(() => video.play(), 1000);
+    // setTimeout(() => video.play(), 1000);
 }
 
 const updateCountdownText = (text) => {
@@ -134,9 +137,9 @@ const pageSetup = () => {
     const startDateStr = window.siteData.nextEventDate;
     const startDate = new Date(startDateStr);
 
-    initVideo();
     registerServiceWorker();
     calculateCountdown(startDate);
     // calculateCountdown(new Date('1 July 2023 12:01:00 GMT+0200'));
+    setTimeout(() => initVideo(), 250);
 }
 pageSetup();

@@ -1,5 +1,6 @@
 section.banner {
     display: flex;
+    max-height: 100vh;
     position: relative;
     justify-content: center;
     flex-direction: column;
@@ -31,7 +32,8 @@ section.banner {
 }
 
 section.banner,
-section.banner #banner-bg {
+section.banner #banner-bg,
+section.banner #banner-bg video {
     width: 100vw;
     height: calc(100vw / 1.77);
     min-height: 650px;
@@ -39,12 +41,7 @@ section.banner #banner-bg {
 
 section.banner #banner-bg video {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-
-    width: auto;
-    height: calc(100vw / 1.6);
-    min-height: 650px;
-
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
