@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🏠 Home page
+# 👥 NMS Meetup
 
-The home page of the No Man's Sky Community Developers & Designers.
+Details on the yearly Guildford meetup and a place to showcase the memories that we have made with all those that joined us to celebrate No Man's Sky
 
 </div>
 
