@@ -1,0 +1,18 @@
+/* TEAM */
+Senior Software Engineer: Kurt Lourens
+Contact: hi [at] kurtlourens.com
+Twitter: @KhaozTopsy
+Discord: @KhaozTopsy
+From: the Netherlands
+
+: Lenni
+
+
+Discord: @lenni009
+From: Germany
+
+/* SITE */
+Last update: 2023-07-12
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code

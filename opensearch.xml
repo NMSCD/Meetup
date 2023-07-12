@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>NMS Meetup - Guildford meetup details &amp; memories</ShortName>
+  <Description>A website to provide details on the yearly Guildford meetup and a place to showcase the memories that we have had with all those that joined us to celebrate No Man&#x27;s Sky</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://meetup.nmscd.com//favicon.ico</Image>
+  <Url type="text/html" template="https://meetup.nmscd.com/?q={searchTerms}">
+    <Param name="searchTerms" value="{searchTerms}" />
+  </Url>
+  <Url type="application/x-suggestions+json" template="https://meetup.nmscd.com/?q={searchTerms}" />
+</OpenSearchDescription>

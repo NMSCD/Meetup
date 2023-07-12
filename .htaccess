@@ -1,0 +1,7 @@
+RewriteEngine On
+
+Redirect 301 "/Robots.txt" "/robots.txt"
+Redirect 301 "/Sitemap.xml" "/sitemap.xml"
+
+
+
