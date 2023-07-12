@@ -18,13 +18,14 @@
 :root {
     --nav-background-color: rgba(56, 64, 75, 0.8);
     --nav-border-color: rgba(165, 190, 200, 0.2);
+    --highlight-color: white;
 }
 
 #app-body {
     // Pico css vars
     --primary: #{var.$primaryColour};
     --primary-hover: #{lighten(var.$primaryColour, 10%)};
-    --primary-focus: rgba(229, 30, 30, 0.25);
+    --primary-focus: #fff;
     --primary-inverse: #fff;
     --secondary: #{var.$secondaryColour};
 
@@ -36,12 +37,21 @@ body {
     background-color: var.$bodyColour;
 }
 
+::selection {
+    background: var(--highlight-color);
+    color: var(--primary);
+}
+
 .mt-2 {
     margin-top: 2em;
 }
 
 .mt-8 {
     margin-top: 8em;
+}
+
+.mb-4 {
+    margin-bottom: 4em;
 }
 
 .max-1-line {
