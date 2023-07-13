@@ -113,4 +113,6 @@ async function buildTemplates() {
     fs.writeFile(`${publicFolderPath}/.gitignore`, generatedGitIgnoreFiles.join('\n'), ['utf8'], () => { });
 }
 
+require('dotenv').config();
+
 buildTemplates()
