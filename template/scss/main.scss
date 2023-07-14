@@ -9,6 +9,7 @@
 @use "event";
 @use "navbar";
 @use "banner";
+@use "breakpoints";
 @use "loader";
 @use "scrollbar";
 
@@ -98,6 +99,10 @@ body {
 .flip-x {
     display: inline-block;
     transform: scaleX(-1);
+}
+
+i.caption {
+    color: rgb(150, 150, 150);
 }
 
 .noselect,
