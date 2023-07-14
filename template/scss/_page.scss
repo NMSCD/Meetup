@@ -74,8 +74,10 @@ section.alt {
 
 footer {
     background-color: #1e2a33;
+    color: whitesmoke;
+    padding-bottom: 4em;
 
-    &.invert {
+    &.alt {
         background-color: rgba(56, 64, 75, 0.4);
         padding-top: 2em;
     }
@@ -91,12 +93,13 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+
     section,
     footer {
         text-align: center !important;
 
         .heading,
-        .heading + span {
+        .heading+span {
             text-align: center !important;
         }
     }

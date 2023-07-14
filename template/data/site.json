@@ -17,6 +17,7 @@
     "link": {
         "nmscd": "https://nmscd.com",
         "nmscdGithubOrg": "https://github.com/NMSCD",
+        "nmscdGithubRepo": "https://github.com/NMSCD/Meetup",
         "nmscdGithubDiscussions": "https://github.com/orgs/NMSCD/discussions",
         "virtualMeetupDiscord": "https://discord.gg/wGNjTjxacX"
     },

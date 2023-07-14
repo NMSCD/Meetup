@@ -26,9 +26,13 @@ section.banner {
         margin-bottom: 0.25em;
     }
 
-    h1 + i {
+    h1,
+    #countdown {
+        color: whitesmoke;
+    }
+
+    h1+i {
         font-size: 1.5em;
-        color: rgb(185, 185, 185);
     }
 }
 
