@@ -1,6 +1,7 @@
 section.banner {
     display: flex;
     max-height: 100vh;
+    width: 100vw;
     position: relative;
     justify-content: center;
     flex-direction: column;
@@ -25,7 +26,7 @@ section.banner {
         margin-bottom: 0.25em;
     }
 
-    h1+i {
+    h1 + i {
         font-size: 1.5em;
         color: rgb(185, 185, 185);
     }
@@ -34,7 +35,6 @@ section.banner {
 section.banner,
 section.banner #banner-bg,
 section.banner #banner-bg video {
-    width: 100vw;
     height: calc(100vw / 1.77);
     min-height: 650px;
 }

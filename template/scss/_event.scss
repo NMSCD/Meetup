@@ -1,0 +1,35 @@
+$cardRadius: 0.5em;
+
+.event-media {
+    column-count: 4;
+    column-gap: 1em;
+
+    .media {
+        text-decoration: none;
+
+        &:hover figure {
+            transform: translateY(-0.4em);
+            filter: drop-shadow(5px 5px 10px #00000093);
+        }
+
+        figure {
+            border-radius: $cardRadius;
+            margin-bottom: 1em;
+            background-color: rgba(0, 0, 0, 0.33);
+            transition: transform 250ms ease-in-out, filter 250ms ease-in-out;
+            filter: drop-shadow(0 0 0 #00000093);
+        }
+
+        img {
+            border-top-left-radius: $cardRadius;
+            border-top-right-radius: $cardRadius;
+            width: 100%;
+        }
+
+        figcaption {
+            text-align: center;
+            padding: 1em;
+            color: rgb(179, 179, 179);
+        }
+    }
+}

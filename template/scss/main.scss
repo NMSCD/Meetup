@@ -6,6 +6,7 @@
 
 @use "var";
 @use "page";
+@use "event";
 @use "navbar";
 @use "banner";
 @use "loader";
@@ -50,6 +51,14 @@ body {
     margin-top: 8em;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-1 {
+    margin-bottom: 1em !important;
+}
+
 .mb-4 {
     margin-bottom: 4em;
 }
@@ -61,7 +70,8 @@ body {
     text-overflow: ellipsis;
 }
 
-.ta-center {
+.ta-center,
+.heading.ta-center {
     text-align: center;
 }
 
