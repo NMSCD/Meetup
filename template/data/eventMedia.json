@@ -44,7 +44,7 @@
             {
                 "id": "007",
                 "ext": "jpg",
-                "caption": "Quiz winners",
+                "caption": "Quiz winning team",
                 "link": "https://twitter.com/NmsRicey/status/1563999583025364992"
             },
             {
@@ -80,6 +80,7 @@
             {
                 "id": "013",
                 "ext": "png",
+                "type": "video",
                 "caption": "Dropping off our gifts for HelloGames the next day",
                 "link": "https://twitter.com/MEOGIone/status/1564206969535299591"
             },
@@ -102,6 +103,13 @@
                 "link": "https://twitter.com/5tarman7/status/1564352416555974669"
             },
             {
+                "id": "025",
+                "ext": "png",
+                "type": "video",
+                "caption": "Captain Steve & Ivy (Manila London)",
+                "link": "https://youtu.be/2vhU67csveM"
+            },
+            {
                 "id": "017",
                 "ext": "png",
                 "caption": "The back of the amazing outfit made by SΓΔRMΔṈ",
@@ -116,14 +124,29 @@
             {
                 "id": "019",
                 "ext": "png",
+                "type": "video",
                 "caption": "A scan around the room",
                 "link": "https://twitter.com/RazorMouse/status/1564037247543951363"
+            },
+            {
+                "id": "026",
+                "ext": "png",
+                "type": "video",
+                "caption": "Captain Steve, Worfιᥱ tᥣhᥲQ and Worfιᥱ tᥣhᥲQ's daughter",
+                "link": "https://youtu.be/2vhU67csveM"
             },
             {
                 "id": "020",
                 "ext": "jpg",
                 "caption": "Selfies with Xaine, Golden Gek & Sombra",
                 "link": "https://twitter.com/xxdarksombraxx/status/1564171650890874886"
+            },
+            {
+                "id": "024",
+                "ext": "png",
+                "type": "video",
+                "caption": "Captain Steve, Procedural Traveller & Fran from the RSS",
+                "link": "https://youtu.be/2vhU67csveM"
             },
             {
                 "id": "021",
@@ -136,6 +159,20 @@
                 "ext": "png",
                 "caption": "Raffle draw in progress",
                 "link": "https://twitter.com/xxdarksombraxx/status/1564171650890874886"
+            },
+            {
+                "id": "023",
+                "ext": "png",
+                "type": "video",
+                "caption": "Box made by Starman, for people to place their thank you notes for Hello Games",
+                "link": "https://youtu.be/nGRhBIoiSRI?t=133"
+            },
+            {
+                "id": "027",
+                "ext": "png",
+                "type": "video",
+                "caption": "Captain Steve, Marty Merrick",
+                "link": "https://youtu.be/2vhU67csveM"
             }
         ]
     }
