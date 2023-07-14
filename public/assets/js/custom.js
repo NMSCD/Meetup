@@ -126,6 +126,7 @@ const initVideo = () => {
 
 const updateCountdownText = (text) => {
     if (countdownTextState == text) return;
+    countdownTextState = text;
 
     const countdownHeader = document.getElementById('countdown');
     if (countdownHeader == null) return;

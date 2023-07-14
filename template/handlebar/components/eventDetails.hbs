@@ -17,12 +17,20 @@
             <div><strong>Date:&nbsp;</strong>{{event.shortDate}}</div>
             <div><strong>Time:&nbsp;</strong>{{event.time}}</div>
             <br>
-            <div><strong>Food:&nbsp;</strong>{{event.foodNotice}}</div>
+            <div><strong>Hashtags to use:&nbsp;</strong><br>
+                <a href="https://nomanssky.social/tags/NMSMeetup{{event.year}}" title="No Man's Sky Social Hashtag"
+                    target="_blank" rel="nopener noreferrer">#NMSMeetup{{event.year}} on No Man's Sky Social</a><br>
+                <a href="https://twitter.com/hashtag/NMSMeetup{{event.year}}" title="Twitter Hashtag" target="_blank"
+                    rel="nopener noreferrer">#NMSMeetup{{event.year}} on Twitter</a>
+            </div>
         </div>
         <div class="col-6 ta-center noselect">
             <iframe width="520" height="290" src="{{event.youtubeEmbed}}" title="YouTube video player"
                 allow="autoplay; picture-in-picture"></iframe>
-            <i>{{event.youtubeCaption}}</i>
+            <i class="caption">{{event.youtubeCaption}}</i>
+        </div>
+        <div class="col-12">
+            <div><strong>Food:&nbsp;</strong>{{event.foodNotice}}</div>
         </div>
     </div>
 </div>

@@ -1,0 +1,26 @@
+body {
+
+    @media screen and (max-width: 992px) {
+        .event-media {
+            column-count: 3;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .event-media {
+            column-count: 2;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .event-media {
+            column-count: 2;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .event-media {
+            column-count: 1;
+        }
+    }
+}

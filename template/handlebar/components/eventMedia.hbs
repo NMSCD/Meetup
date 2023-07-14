@@ -11,8 +11,13 @@
     {{#each images}}
     <a href="{{this.link}}" class="media" title="{{this.caption}}" target="_blank" rel="noopener noreferrer">
         <figure>
-            <img src="/assets/img/event/{{this.id}}.{{this.ext}}" alt="{{this.caption}}" />
+            <img src="/assets/img/event/{{this.id}}.{{this.ext}}" loading="lazy" alt="{{this.caption}}"
+                width="{{minWidth}}" height="{{minHeight}}" />
             <figcaption>{{this.caption}}</figcaption>
+
+            {{#if type}}
+            <span class="type">{{type}}</span>
+            {{/if}}
         </figure>
     </a>
     {{/each}}
