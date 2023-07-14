@@ -13,11 +13,25 @@ $cardRadius: 0.5em;
         }
 
         figure {
+            position: relative;
             border-radius: $cardRadius;
             margin-bottom: 1em;
-            background-color: rgba(0, 0, 0, 0.33);
+            background-color: #10171C;
+            // border: 3px solid rgba(0, 0, 0, 0.33);
             transition: transform 250ms ease-in-out, filter 250ms ease-in-out;
             filter: drop-shadow(0 0 0 #00000093);
+
+            .type {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0.25em 0.5em 0.5em 0.75em;
+                border-top-right-radius: $cardRadius;
+                border-bottom-left-radius: $cardRadius;
+                color: white;
+                background-color: var(--primary);
+                opacity: 0.9;
+            }
         }
 
         img {

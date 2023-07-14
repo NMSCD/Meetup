@@ -1,9 +1,11 @@
 const fs = require('fs');
 const util = require('util');
+const sizeOf = require('image-size');
 const Handlebars = require('handlebars');
 const readFile = util.promisify(fs.readFile);
 
-const publicFolderPath = './public'
+const publicFolderPath = './public';
+const eventMediaMinWidth = 250;
 
 async function buildTemplates() {
     process.env['NODE_ENV'] = require('../../package.json').version;
@@ -37,6 +39,23 @@ async function buildTemplates() {
         }
     }
 
+    const eventMediaWithSizes = [];
+    for (const eventItem of eventMedia) {
+        const eventMediaImagesWithSizes = [];
+        for (const eventMediaItem of eventItem.images) {
+            const dimensions = sizeOf(`./public/assets/img/event/${eventMediaItem.id}.${eventMediaItem.ext}`);
+            eventMediaImagesWithSizes.push({
+                ...eventMediaItem,
+                minWidth: eventMediaMinWidth,
+                minHeight: (dimensions.height / dimensions.width) * eventMediaMinWidth,
+            });
+        }
+        eventMediaWithSizes.push({
+            ...eventItem,
+            images: eventMediaImagesWithSizes,
+        })
+    }
+
     const orgDataArray = [];
     for (const orgKey in orgData) {
         if (Object.hasOwnProperty.call(orgData, orgKey)) {
@@ -44,13 +63,18 @@ async function buildTemplates() {
         }
     }
 
+    const enableAnalytics = process?.env?.ENV_ENABLE_ANALYTICS ?? false;
+    const enableServiceWorker = process?.env?.ENV_ENABLE_SERVICEWORKER ?? false; // To handle the damn serviceWorker cache on local
+
     const injectedScriptInHead = `<script>var siteData = ${JSON.stringify({
-        nextEventDate: siteData.event.current.date
+        nextEventDate: siteData.event.current.date,
+        enableAnalytics,
+        enableServiceWorker,
     })}</script>`;
 
     const projectData = {
         ...siteData,
-        eventMedia: eventMedia,
+        eventMedia: eventMediaWithSizes,
         organisers: orgData,
         organisersArray: orgDataArray,
         humansArray: humansArray,
@@ -73,7 +97,6 @@ async function buildTemplates() {
         { src: 'sitemap.xml.hbs', dest: 'sitemap.xml' },
     ];
 
-    const enableServiceWorker = process?.env?.ENV_ENABLE_SERVICEWORKER ?? false; // To handle the damn serviceWorker cache on local
     if (enableServiceWorker === true) {
         files.push({ src: 'serviceWorker.js.hbs', dest: 'serviceWorker.js' });
     }
