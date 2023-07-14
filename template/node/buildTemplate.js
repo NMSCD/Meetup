@@ -17,17 +17,18 @@ async function buildTemplates() {
     Handlebars.registerPartial('components/documentHead', require('../handlebar/components/documentHead.hbs'));
     Handlebars.registerPartial('components/schemaOrg', require('../handlebar/components/schemaOrg.hbs'));
     Handlebars.registerPartial('components/header', require('../handlebar/components/header.hbs'));
+    Handlebars.registerPartial('components/eventMedia', require('../handlebar/components/eventMedia.hbs'));
     Handlebars.registerPartial('components/eventDetails', require('../handlebar/components/eventDetails.hbs'));
     Handlebars.registerPartial('components/footer', require('../handlebar/components/footer.hbs'));
     Handlebars.registerPartial('components/scripts', require('../handlebar/components/scripts.hbs'));
 
     const siteDataContents = await readFile('./template/data/site.json', 'utf8');
     const orgDataContents = await readFile('./template/data/organisers.json', 'utf8');
-    // const projectsContents = await readFile('./template/data/projects.json', 'utf8');
+    const eventMediaContents = await readFile('./template/data/eventMedia.json', 'utf8');
 
     const siteData = JSON.parse(siteDataContents);
     const orgData = JSON.parse(orgDataContents);
-    // const projects = JSON.parse(projectsContents);
+    const eventMedia = JSON.parse(eventMediaContents);
 
     const humansArray = [];
     for (const humanKey in siteData.humans) {
@@ -49,7 +50,7 @@ async function buildTemplates() {
 
     const projectData = {
         ...siteData,
-        // ...projects,
+        eventMedia: eventMedia,
         organisers: orgData,
         organisersArray: orgDataArray,
         humansArray: humansArray,

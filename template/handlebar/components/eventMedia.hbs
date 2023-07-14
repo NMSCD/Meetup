@@ -1,0 +1,19 @@
+<div class="col-12">
+    <div class="heading ta-center">
+        <h2 class="mb-0">{{year}} event images</h2>
+    </div>
+</div>
+<div class="col-12 mb-1 ta-center noselect">
+    <a href="https://twitter.com/hashtag/{{hashtag}}" title="{{hashtag}}" target="_blank" rel="noopener noreferrer"
+        role="button">View Tweets with the hashtag: #{{hashtag}}</a>
+</div>
+<div class="col-12 event-media noselect">
+    {{#each images}}
+    <a href="{{this.link}}" class="media" title="{{this.caption}}" target="_blank" rel="noopener noreferrer">
+        <figure>
+            <img src="/assets/img/event/{{this.id}}.{{this.ext}}" alt="{{this.caption}}" />
+            <figcaption>{{this.caption}}</figcaption>
+        </figure>
+    </a>
+    {{/each}}
+</div>
