@@ -38,6 +38,24 @@
             "youtubeEmbed": "https://www.youtube.com/embed/wLcejNyW5_U",
             "youtubeCaption": "Video by Captain Steve about the event"
         },
+        "previous": [
+            {
+                "date": "28 Aug 2022 18:00:00 GMT",
+                "shortDate": "28th August",
+                "year": "2022",
+                "time": "6PM (GMT)",
+                "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
+                "locationAddress": [
+                    "Three Pigeons pub (Up Stairs)",
+                    "169 High St",
+                    "Guildford",
+                    "GU1 3AJ"
+                ],
+                "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
+                "youtubeEmbed": "https://www.youtube.com/embed/2vhU67csveM?si=LIhG6Vkzkbv_Iq43",
+                "youtubeCaption": "Video by Captain Steve about the event"
+            }
+        ],
         "notConfirmed": {
             "date": "25 Aug 2024 18:00:00 GMT",
             "shortDate": "25th August",

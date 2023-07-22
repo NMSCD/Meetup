@@ -5,7 +5,7 @@
 
 <body id="app-body" class="is-loading">
 
-    {{> components/header }}
+    {{> components/header pageTitle="NMS Meetup"}}
 
     <div class="page-wrapper">
 
@@ -70,12 +70,12 @@
             </div>
         </section>
 
-        <section>
+        <section id="event-media">
             <div class="container">
                 <div class="row">
-                    {{#each eventMedia}}
-                    {{> components/eventMedia event=this}}
-                    {{/each}}
+                    {{> components/eventMedia event=previousEventMedia customEventHeading="Images & videos from the
+                    previous year"
+                    viewMore="true"}}
                 </div>
             </div>
         </section>

@@ -6,6 +6,7 @@ const readFile = util.promisify(fs.readFile);
 
 const publicFolderPath = './public';
 const eventMediaMinWidth = 250;
+const maxNumMediaOnHomePage = 15;
 
 async function buildTemplates() {
     process.env['NODE_ENV'] = require('../../package.json').version;
@@ -103,16 +104,52 @@ async function buildTemplates() {
 
     const generatedGitIgnoreFiles = [];
 
+    let previousEventMedia = projectData.eventMedia.find(evm => evm.year === (projectData.event.current.year - 1).toString());
+    if (previousEventMedia != null) {
+        previousEventMedia = {
+            ...previousEventMedia,
+            images: previousEventMedia.images.slice(0, maxNumMediaOnHomePage),
+        }
+    }
+    const generalTemplateData = {
+        ...projectData,
+        previousEventMedia: previousEventMedia,
+    };
+
     for (const fileObj of files) {
         const template = await readFile(`./template/handlebar/${fileObj.src}`, 'utf8');
         const templateFunc = Handlebars.compile(template);
-        const templateData = {
-            ...projectData,
-            allItems: []
-        };
-        const compiledTemplate = templateFunc(templateData);
+
+        const compiledTemplate = templateFunc(generalTemplateData);
         const destFile = `${publicFolderPath}/${fileObj.dest}`;
         generatedGitIgnoreFiles.push(fileObj.dest);
+        fs.writeFile(destFile, compiledTemplate, ['utf8'], () => { });
+    }
+
+    const events = [
+        projectData.event.current,
+        ...projectData.event.previous
+    ];
+    for (const meetupYear of events) {
+        const template = await readFile('./template/handlebar/meetupYear.html.hbs', 'utf8');
+        const templateFunc = Handlebars.compile(template);
+
+        const eventMedia = projectData.eventMedia.find(evm => evm.year === meetupYear.year.toString());
+        const templateData = {
+            ...projectData,
+            meetup: meetupYear,
+            pageTitle: `NMS ${meetupYear.year} Meetup`,
+            meta: {
+                ...projectData.meta,
+                title: projectData.meta.title.replaceAll(' - ', ` ${meetupYear.year} - `),
+            },
+            eventMedia: eventMedia,
+            hasEventMedia: eventMedia != null,
+        };
+        const htmlFile = `${meetupYear.year}.html`;
+        const compiledTemplate = templateFunc(templateData);
+        const destFile = `${publicFolderPath}/${htmlFile}`;
+        generatedGitIgnoreFiles.push(htmlFile);
         fs.writeFile(destFile, compiledTemplate, ['utf8'], () => { });
     }
 
