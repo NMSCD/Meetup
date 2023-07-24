@@ -1,14 +1,18 @@
 <div class="col-12">
     <div class="heading ta-center">
-        <h2 class="mb-0">{{year}} event images</h2>
+        {{#if customEventHeading}}
+        <h2>{{customEventHeading}}</h2>
+        {{else}}
+        <h2>{{event.year}} event images</h2>
+        {{/if}}
     </div>
 </div>
-<div class="col-12 mb-1 ta-center noselect">
+{{!-- <div class="col-12 mb-1 ta-center noselect">
     <a href="https://twitter.com/hashtag/{{hashtag}}" title="{{hashtag}}" target="_blank" rel="noopener noreferrer"
         role="button">View Tweets with the hashtag: #{{hashtag}}</a>
-</div>
+</div> --}}
 <div class="col-12 event-media noselect">
-    {{#each images}}
+    {{#each event.images}}
     <a href="{{this.link}}" class="media" title="{{this.caption}}" target="_blank" rel="noopener noreferrer">
         <figure>
             <img src="/assets/img/event/{{this.id}}.{{this.ext}}" loading="lazy" alt="{{this.caption}}"
@@ -21,4 +25,11 @@
         </figure>
     </a>
     {{/each}}
+</div>
+
+<div class="col-12 ta-center noselect">
+    {{#if viewMore}}
+    <a href="/{{event.year}}.html" title="{{event.year}} images" role="button">View more
+        media from the {{event.year}} meetup &gt;</a>
+    {{/if}}
 </div>

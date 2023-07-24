@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{{> components/documentHead preloadMainImgs="true" schemaOrg="true"}}
+
+<body id="app-body" class="is-loading">
+
+    {{> components/header }}
+
+    <div class="page-wrapper">
+
+        <section id="fake-banner" style="padding-top: 1em;"></section>
+        <section class="alt">
+            {{> components/eventDetails event=meetup }}
+        </section>
+
+        <section id="event-media">
+            <div class="container">
+                <div class="row">
+                    {{#if hasEventMedia}}
+                    {{> components/eventMedia event=eventMedia }}
+                    {{else}}
+                    <div class="col-12 ta-center noselect">
+                        <h3>No images or videos of the event</h3>
+                        <span>Yet... 😅</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </section>
+
+        {{> components/footer additionalClass="alt"}}
+
+    </div>
+
+    {{> components/scripts }}
+
+</body>
+
+</html>
