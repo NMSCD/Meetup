@@ -35,6 +35,8 @@
                 "Guildford",
                 "GU1 3AJ"
             ],
+            "hasNmsSocialHashtag": true,
+            "hasTwitterHashtag": true,
             "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
             "youtubeEmbed": "https://www.youtube.com/embed/wLcejNyW5_U",
             "youtubeCaption": "Video by Captain Steve about the event"
@@ -53,6 +55,8 @@
                     "Guildford",
                     "GU1 3AJ"
                 ],
+                "hasNmsSocialHashtag": false,
+                "hasTwitterHashtag": true,
                 "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
                 "youtubeEmbed": "https://www.youtube.com/embed/2vhU67csveM?si=LIhG6Vkzkbv_Iq43",
                 "youtubeCaption": "Video by Captain Steve about the event"
@@ -71,6 +75,8 @@
                 "Guildford",
                 "GU1 3AJ"
             ],
+            "hasNmsSocialHashtag": false,
+            "hasTwitterHashtag": false,
             "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
             "youtubeEmbed": "https://www.youtube.com/embed/wLcejNyW5_U",
             "youtubeCaption": "Video by Captain Steve about the event"

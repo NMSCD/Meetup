@@ -18,10 +18,14 @@
             <div><strong>Time:&nbsp;</strong>{{event.time}}</div>
             <br>
             <div><strong>Hashtags to use:&nbsp;</strong><br>
+                {{#if event.hasNmsSocialHashtag}}
                 <a href="https://nomanssky.social/tags/NMSMeetup{{event.year}}" title="No Man's Sky Social Hashtag"
                     target="_blank" rel="nopener noreferrer">#NMSMeetup{{event.year}} on No Man's Sky Social</a><br>
+                {{/if}}
+                {{#if event.hasTwitterHashtag}}
                 <a href="https://twitter.com/hashtag/NMSMeetup{{event.year}}" title="Twitter Hashtag" target="_blank"
                     rel="nopener noreferrer">#NMSMeetup{{event.year}} on Twitter</a>
+                {{/if}}
             </div>
         </div>
         <div class="col-6 ta-center noselect">
