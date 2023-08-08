@@ -6,7 +6,7 @@ const readFile = util.promisify(fs.readFile);
 
 const publicFolderPath = './public';
 const eventMediaMinWidth = 250;
-const maxNumMediaOnHomePage = 15;
+const maxNumMediaOnHomePage = 10;
 
 async function buildTemplates() {
     process.env['NODE_ENV'] = require('../../package.json').version;

@@ -17,6 +17,14 @@
             <div><strong>Date:&nbsp;</strong>{{event.shortDate}}</div>
             <div><strong>Time:&nbsp;</strong>{{event.time}}</div>
             <br>
+            {{#if event.hasVirtualMeetup}}
+            <div>
+                <strong>Can't make it to the physical meetup?:&nbsp;</strong><br />
+                <span>Join the <a href="{{event.discordInviteUrl}}" target="_blank" rel="noopener noreferrer"
+                        class="discord">Virtual Meetup Discord</a></span>
+            </div>
+            <br />
+            {{/if}}
             <div><strong>Hashtags to use:&nbsp;</strong><br>
                 {{#if event.hasNmsSocialHashtag}}
                 <a href="https://nomanssky.social/tags/NMSMeetup{{event.year}}" title="No Man's Sky Social Hashtag"
