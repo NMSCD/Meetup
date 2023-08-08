@@ -1,6 +1,6 @@
 {
   "name": "nmscd.meetup",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "build": "npm-run-all --sequential setup:* sass:* template:*",
     "setup": "npm i && npm-run-all --sequential setup:*",
