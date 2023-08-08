@@ -69,8 +69,8 @@ async function buildTemplates() {
 
     const injectedScriptInHead = `<script>var siteData = ${JSON.stringify({
         nextEventDate: siteData.event.current.date,
-        enableAnalytics,
-        enableServiceWorker,
+        enableAnalytics: enableAnalytics === 'true',
+        enableServiceWorker: enableServiceWorker === 'true',
     })}</script>`;
 
     const projectData = {
