@@ -27,9 +27,11 @@ jobs:
       - name: Setup Secrets
         env:
           ENV_ENABLE_SERVICEWORKER: ${{ secrets.ENV_ENABLE_SERVICEWORKER }}
+          ENV_ENABLE_ANALYTICS: ${{ secrets.ENV_ENABLE_ANALYTICS }}
         run: |
           touch .env
           echo ENV_ENABLE_SERVICEWORKER="$ENV_ENABLE_SERVICEWORKER" >> .env
+          echo ENV_ENABLE_ANALYTICS="$ENV_ENABLE_ANALYTICS" >> .env
 
       - name: Build HTML
         run: |
