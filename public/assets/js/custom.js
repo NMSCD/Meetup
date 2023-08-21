@@ -26,6 +26,7 @@ const registerServiceWorker = async () => {
 const highlightHtml = (char) => `<span class="secondary opacity-80">${char}</span>`;
 
 const calcDiffInMilli = (startDate) => {
+    // let diffInMilli = startDate - new Date('2023-08-27T20:01:00');
     let diffInMilli = startDate - Date.now();
     if (diffInMilli < 0) {
 
@@ -38,11 +39,11 @@ const calcDiffInMilli = (startDate) => {
 
     return {
         status: 'countdown',
-        milli: startDate - Date.now(),
+        milli: diffInMilli,
     };
 }
 
-const calculateCountdown = (startDate) => {
+const calculateCountdown = (startDate, siteData) => {
 
     if (isNaN(startDate)) {
         updateCountdownText('');
@@ -53,7 +54,12 @@ const calculateCountdown = (startDate) => {
     if (diffInMilliObj.status != 'countdown') {
 
         if (diffInMilliObj.status == 'live') {
-            updateCountdownText(highlightHtml('<span class="flip-x">🎉</span> It is happening right now! 🎉'));
+            let textToDisplay = '<span class="flip-x">🎉</span> It is happening right now! 🎉';
+            if (siteData.hasVirtualMeetup === true) {
+                textToDisplay += '<br/>';
+                textToDisplay += `<a href="${siteData.discordLink}" target="_blank" rel="noopener noreferrer">Click to join the virtual event</a>`;
+            }
+            updateCountdownText(highlightHtml(textToDisplay));
         }
 
         if (diffInMilliObj.status == 'over') {
@@ -98,7 +104,7 @@ const calculateCountdown = (startDate) => {
     updateCountdownText(innerHtml);
 
     setTimeout(() => {
-        calculateCountdown(startDate);
+        calculateCountdown(startDate, siteData);
     }, countdownTimeoutDur);
 }
 
@@ -139,8 +145,7 @@ const pageSetup = () => {
     const startDate = new Date(startDateStr);
 
     registerServiceWorker();
-    calculateCountdown(startDate);
-    // calculateCountdown(new Date('1 July 2023 12:01:00 GMT+0200'));
+    calculateCountdown(startDate, window.siteData);
     setTimeout(() => initVideo(), 250);
 }
 pageSetup();

@@ -64,13 +64,15 @@ async function buildTemplates() {
         }
     }
 
-    const enableAnalytics = process?.env?.ENV_ENABLE_ANALYTICS ?? false;
-    const enableServiceWorker = process?.env?.ENV_ENABLE_SERVICEWORKER ?? false; // To handle the damn serviceWorker cache on local
+    const enableAnalytics = (process?.env?.ENV_ENABLE_ANALYTICS ?? false) === 'true';
+    const enableServiceWorker = (process?.env?.ENV_ENABLE_SERVICEWORKER ?? false) === 'true'; // To handle the damn serviceWorker cache on local
 
     const injectedScriptInHead = `<script>var siteData = ${JSON.stringify({
         nextEventDate: siteData.event.current.date,
-        enableAnalytics: enableAnalytics === 'true',
-        enableServiceWorker: enableServiceWorker === 'true',
+        hasVirtualMeetup: siteData.event.current.hasVirtualMeetup,
+        discordLink: siteData.event.current.discordInviteUrl,
+        enableAnalytics,
+        enableServiceWorker,
     })}</script>`;
 
     const projectData = {
