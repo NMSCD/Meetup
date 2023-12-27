@@ -47,3 +47,7 @@ $cardRadius: 0.5em;
         }
     }
 }
+
+img.rounded {
+    border-radius: $cardRadius;
+}

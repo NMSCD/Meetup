@@ -175,5 +175,140 @@
                 "link": "https://youtu.be/2vhU67csveM"
             }
         ]
+    },
+    {
+        "date": "27 Aug 2023 18:00:00 GMT",
+        "shortDate": "27th August",
+        "year": "2023",
+        "hashtag": "NMSMeetup2023",
+        "images": [
+            {
+                "id": "001",
+                "ext": "png",
+                "caption": "WulfyTheNoob, TheRedOrb and their partners",
+                "link": "https://www.youtube.com/watch?v=6JmsLaaBH-E"
+            },
+            {
+                "id": "002",
+                "ext": "gif",
+                "type": "video",
+                "caption": "Video made by TheRedOrb showing the NMS meetup atmosphere",
+                "link": "https://twitter.com/the_redOrb/status/1695845353503736177"
+            },
+            {
+                "id": "003",
+                "ext": "png",
+                "caption": "Cake provided by HelloGames",
+                "link": "https://twitter.com/Ynys/status/1695835085121974767/photo/1"
+            },
+            {
+                "id": "004",
+                "ext": "png",
+                "caption": "Cosplay by SΓΔRMΔṈ",
+                "link": "https://twitter.com/5tarman7/status/1696095290506219783"
+            },
+            {
+                "id": "008",
+                "ext": "png",
+                "caption": "Teams working hard during the quiz",
+                "link": "https://twitter.com/5tarman7/status/1696828370309247042"
+            },
+            {
+                "id": "016",
+                "ext": "png",
+                "caption": "Ivy and Leandra",
+                "link": "https://www.youtube.com/watch?v=a5wDzKD8ixI"
+            },
+            {
+                "id": "005",
+                "ext": "jpg",
+                "caption": "GameMode and SΓΔRMΔṈ",
+                "link": "https://twitter.com/5tarman7/status/1696095290506219783/photo/3"
+            },
+            {
+                "id": "011",
+                "ext": "png",
+                "caption": "Quiz trophies for the top 3 teams (made by AssistantNMS)",
+                "link": "https://www.youtube.com/watch?v=6JmsLaaBH-E"
+            },
+            {
+                "id": "007",
+                "ext": "png",
+                "caption": "Xaine, Sombra, LPlays, Beeblebum",
+                "link": "https://twitter.com/5tarman7/status/1696828370309247042"
+            },
+            {
+                "id": "009",
+                "ext": "png",
+                "caption": "LPlays end of the night pic",
+                "link": "https://twitter.com/TippyTappyTV/status/1696231568098869737"
+            },
+            {
+                "id": "010",
+                "ext": "png",
+                "caption": "Gift box for HelloGames made by SΓΔRMΔṈ",
+                "link": "https://www.youtube.com/watch?v=6JmsLaaBH-E"
+            },
+            {
+                "id": "015",
+                "ext": "png",
+                "caption": "Group of attendees",
+                "link": "https://www.youtube.com/watch?v=a5wDzKD8ixI"
+            },
+            {
+                "id": "012",
+                "ext": "png",
+                "caption": "Lenni009 wearing a hoodie supplied by HelloGames",
+                "link": "https://www.youtube.com/watch?v=6JmsLaaBH-E"
+            },
+            {
+                "id": "006",
+                "ext": "png",
+                "caption": "NMS meet-up pics by SΓΔRMΔṈ",
+                "link": "https://twitter.com/5tarman7/status/1696828370309247042"
+            },
+            {
+                "id": "013",
+                "ext": "png",
+                "caption": "Gift for HelloGames made by all of the Meetup attendees",
+                "link": "https://www.youtube.com/watch?v=6JmsLaaBH-E"
+            },
+            {
+                "id": "014",
+                "ext": "png",
+                "caption": "Group of attendees that delivered the HelloGames gift the next day",
+                "link": "https://www.youtube.com/watch?v=6JmsLaaBH-E"
+            },
+            {
+                "id": "017",
+                "ext": "png",
+                "caption": "Xaine, Sombra, LPlays, Beeblebum, GoldenGek",
+                "link": "https://www.youtube.com/watch?v=a5wDzKD8ixI"
+            },
+            {
+                "id": "018",
+                "ext": "png",
+                "caption": "Nella with the cake provided by HelloGames",
+                "link": "https://www.youtube.com/watch?v=a5wDzKD8ixI"
+            },
+            {
+                "id": "019",
+                "ext": "png",
+                "caption": "Ricey, Xaine's World and Captain Steve",
+                "link": "https://www.youtube.com/watch?v=a5wDzKD8ixI"
+            },
+            {
+                "id": "020",
+                "ext": "png",
+                "caption": "End of the night thank you message to HelloGames",
+                "link": "https://www.youtube.com/watch?v=a5wDzKD8ixI"
+            },
+            {
+                "id": "021",
+                "ext": "png",
+                "caption": "Winning Quiz team",
+                "link": "https://www.youtube.com/watch?v=a5wDzKD8ixI"
+            }
+        ]
     }
 ]

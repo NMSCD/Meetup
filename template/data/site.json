@@ -23,9 +23,9 @@
     },
     "event": {
         "current": {
-            "date": "27 Aug 2023 18:00:00 GMT",
-            "shortDate": "27th August",
-            "year": "2023",
+            "date": "25 Aug 2024 18:00:00 GMT",
+            "shortDate": "25th August",
+            "year": "2024",
             "time": "6PM (GMT)",
             "discordInviteUrl": "https://discord.gg/wGNjTjxacX",
             "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
@@ -39,10 +39,30 @@
             "hasNmsSocialHashtag": true,
             "hasTwitterHashtag": true,
             "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
-            "youtubeEmbed": "https://www.youtube.com/embed/wLcejNyW5_U",
-            "youtubeCaption": "Video by Captain Steve about the event"
+            "bannerImg": "/assets/img/captSteveBanner2024.jpg",
+            "bannerCaption": "Banner by Captain Steve"
         },
         "previous": [
+            {
+                "date": "27 Aug 2023 18:00:00 GMT",
+                "shortDate": "27th August",
+                "year": "2023",
+                "time": "6PM (GMT)",
+                "discordInviteUrl": "https://discord.gg/wGNjTjxacX",
+                "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
+                "locationAddress": [
+                    "Three Pigeons pub (Up Stairs)",
+                    "169 High St",
+                    "Guildford",
+                    "GU1 3AJ"
+                ],
+                "hasVirtualMeetup": true,
+                "hasNmsSocialHashtag": true,
+                "hasTwitterHashtag": true,
+                "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
+                "youtubeEmbed": "https://www.youtube.com/embed/wLcejNyW5_U",
+                "youtubeCaption": "Video by Captain Steve about the event"
+            },
             {
                 "date": "28 Aug 2022 18:00:00 GMT",
                 "shortDate": "28th August",

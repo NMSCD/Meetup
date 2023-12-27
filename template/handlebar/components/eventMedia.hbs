@@ -13,9 +13,9 @@
 </div> --}}
 <div class="col-12 event-media noselect">
     {{#each event.images}}
-    <a href="{{this.link}}" class="media" title="{{this.caption}}" target="_blank" rel="noopener noreferrer">
+    <a href="{{this.link}}" id="{{this.id}}" class="media" title="{{this.caption}}" target="_blank" rel="noopener noreferrer">
         <figure>
-            <img src="/assets/img/event/{{this.id}}.{{this.ext}}" loading="lazy" alt="{{this.caption}}"
+            <img src="/assets/img/event/{{../event.year}}/{{this.id}}.{{this.ext}}" loading="lazy" alt="{{this.caption}}"
                 width="{{minWidth}}" height="{{minHeight}}" />
             <figcaption>{{this.caption}}</figcaption>
 
@@ -30,6 +30,6 @@
 <div class="col-12 ta-center noselect">
     {{#if viewMore}}
     <a href="/{{event.year}}.html" title="{{event.year}} images" role="button">View more
-        media from the {{event.year}} meetup &gt;</a>
+        media from the {{event.year}} meetup 🡺</a>
     {{/if}}
 </div>
