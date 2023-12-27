@@ -7,3 +7,5 @@ node_modules
 /public/assets/img/members
 template/scss/third-party/_normalize.scss
 /public/CNAME
+.vscode/arduino.json
+.vscode/c_cpp_properties.json

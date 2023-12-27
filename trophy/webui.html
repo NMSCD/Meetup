@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 style="text-align: center;">Yes</h1>
+        <h3>Select light mode</h3>
+        <div id="actions"></div>
+        <hr>
+        <br>
+        <h4>Custom light mode</h4>
+        <input type="color" id="colourInput" onchange="customColour()" value="#0000ff">
+        <input type="range" id="lightPos" oninput="customColour()" min="1" max="8" value="4">
+        <div style="margin-bottom: 10em"></div>
+    </main>
+</body>
+
+<script>
+    var options = {
+        'red': 1,
+        'orange': 2,
+        'yellow': 3,
+        'green': 4,
+        'blue': 5,
+        'purple': 6,
+        'indigo': 7,
+        'pink': 8,
+    };
+
+    const customColour = () => {
+        const colourInputElem = document.getElementById('colourInput');
+        const lightPosElem = document.getElementById('lightPos');
+
+        const rgb = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(colourInputElem.value);
+        const r = parseInt(rgb[1], 16);
+        const g = parseInt(rgb[2], 16);
+        const b = parseInt(rgb[3], 16);
+
+        const request = new XMLHttpRequest();
+        request.open('GET', `/drag-colour?r=${r}&g=${g}&b=${b}&pos=${lightPosElem.value}`);
+        request.send();
+    };
+
+    const changeMode = (id) => () => {
+        const request = new XMLHttpRequest();
+        request.open('GET', `/select-mode?mode=${id}`);
+        request.send();
+    };
+
+    const actionsElem = document.getElementById('actions');
+    for (const opt of Object.keys(options)) {
+        const btn = document.createElement('button');
+        btn.innerHTML = opt;
+        btn.onclick = changeMode(options[opt]);
+        actionsElem.append(btn);
+    }
+</script>
+
+</html>
+<!-- minify the css with https://www.toptal.com/developers/cssminifier -->
+<!-- minify the above with https://www.willpeavy.com/tools/minifier/ -->

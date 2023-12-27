@@ -6,7 +6,7 @@ const readFile = util.promisify(fs.readFile);
 
 const publicFolderPath = './public';
 const eventMediaMinWidth = 250;
-const maxNumMediaOnHomePage = 10;
+const maxNumMediaOnHomePage = 12;
 
 async function buildTemplates() {
     process.env['NODE_ENV'] = require('../../package.json').version;
@@ -44,7 +44,7 @@ async function buildTemplates() {
     for (const eventItem of eventMedia) {
         const eventMediaImagesWithSizes = [];
         for (const eventMediaItem of eventItem.images) {
-            const dimensions = sizeOf(`./public/assets/img/event/${eventMediaItem.id}.${eventMediaItem.ext}`);
+            const dimensions = sizeOf(`./public/assets/img/event/${eventItem.year}/${eventMediaItem.id}.${eventMediaItem.ext}`);
             eventMediaImagesWithSizes.push({
                 ...eventMediaItem,
                 minWidth: eventMediaMinWidth,

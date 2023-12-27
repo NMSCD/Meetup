@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-shadow ta-center">
-                        <h1>No Man's Sky <span class="primary">{{year}}</span>&nbsp;meetup
+                        <h1>No Man's Sky <span class="primary">{{event.current.year}}</span>&nbsp;meetup
                             <small class="hidden for seo">Guildford meetup</small>
                         </h1>
                         <i>
@@ -76,6 +76,10 @@
                     {{> components/eventMedia event=previousEventMedia customEventHeading="Images & videos from the
                     previous year"
                     viewMore="true"}}
+
+                    <div class="col-12 ta-center noselect">
+                        <a href="/2022.html" title="2022 images" role="button">View media from the 2022 meetup 🡺</a>
+                    </div>
                 </div>
             </div>
         </section>
