@@ -106,7 +106,7 @@ async function buildTemplates() {
 
     const generatedGitIgnoreFiles = [];
 
-    let previousEventMedia = projectData.eventMedia.find(evm => evm.year === (projectData.event.current.year - 1).toString());
+    let previousEventMedia = projectData.eventMedia.find(evm => evm.year === (projectData.event.current.year).toString());
     if (previousEventMedia != null) {
         previousEventMedia = {
             ...previousEventMedia,
