@@ -23,9 +23,9 @@
     },
     "event": {
         "current": {
-            "date": "25 Aug 2024 18:00:00 GMT",
-            "shortDate": "25th August",
-            "year": "2024",
+            "date": "24 Aug 2024 18:00:00 GMT",
+            "shortDate": "24th August",
+            "year": "2025",
             "time": "6PM (GMT)",
             "discordInviteUrl": "https://discord.gg/wGNjTjxacX",
             "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
@@ -43,6 +43,26 @@
             "bannerCaption": "Banner by Captain Steve"
         },
         "previous": [
+            {
+                "date": "25 Aug 2024 18:00:00 GMT",
+                "shortDate": "25th August",
+                "year": "2024",
+                "time": "6PM (GMT)",
+                "discordInviteUrl": "https://discord.gg/wGNjTjxacX",
+                "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
+                "locationAddress": [
+                    "Three Pigeons pub (Up Stairs)",
+                    "169 High St",
+                    "Guildford",
+                    "GU1 3AJ"
+                ],
+                "hasVirtualMeetup": true,
+                "hasNmsSocialHashtag": true,
+                "hasTwitterHashtag": true,
+                "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
+                "bannerImg": "/assets/img/captSteveBanner2024.jpg",
+                "bannerCaption": "Banner by Captain Steve"
+            },
             {
                 "date": "27 Aug 2023 18:00:00 GMT",
                 "shortDate": "27th August",
