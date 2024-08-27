@@ -5,7 +5,8 @@ name: Build and Deploy
 
 on:
   push:
-    branches: ['main']
+    branches: ["main"]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -22,7 +23,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Setup Secrets
         env:
