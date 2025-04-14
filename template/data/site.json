@@ -23,7 +23,7 @@
     },
     "event": {
         "current": {
-            "date": "24 Aug 2024 18:00:00 GMT",
+            "date": "24 Aug 2025 18:00:00 GMT",
             "shortDate": "24th August",
             "year": "2025",
             "time": "6PM (GMT)",
@@ -103,27 +103,7 @@
                 "youtubeEmbed": "https://www.youtube.com/embed/2vhU67csveM?si=LIhG6Vkzkbv_Iq43",
                 "youtubeCaption": "Video by Captain Steve about the event"
             }
-        ],
-        "notConfirmed": {
-            "date": "25 Aug 2024 18:00:00 GMT",
-            "shortDate": "25th August",
-            "year": "2024",
-            "time": "6PM (GMT)",
-            "discordInviteUrl": "https://discord.gg/wGNjTjxacX",
-            "locationUrl": "https://goo.gl/maps/VcDBMRhMVhJhucfB6",
-            "locationAddress": [
-                "Three Pigeons pub (Up Stairs)",
-                "169 High St",
-                "Guildford",
-                "GU1 3AJ"
-            ],
-            "hasVirtualMeetup": true,
-            "hasNmsSocialHashtag": false,
-            "hasTwitterHashtag": false,
-            "foodNotice": "Food and drink can be purchased at the venue, not supplied by the event organisers. Kitchen Closes normally around 7pm, they may keep it open to 8pm We suggest that you order food when you arrive.",
-            "youtubeEmbed": "https://www.youtube.com/embed/wLcejNyW5_U",
-            "youtubeCaption": "Video by Captain Steve about the event"
-        }
+        ]
     },
     "preconnectLinks": [
         "https://fonts.nmscd.com"
